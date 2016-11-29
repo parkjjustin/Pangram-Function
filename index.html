@@ -7,22 +7,21 @@
 
  <body>
 
- 		<h1>Adding all the elements in an array</h1>
+ 		<h1>Check if input sentence is a pangram</h1>
 
  <script>
-function pangram() {
-    var sentence ="We promptly judged antique ivory buckles for the next prize"
-    var patt = new RegExp(/[a-z]/i);
-    
-    var result = patt.test(sentence);
+function isPangram(string){ 
+   var result = /(?=.*a)(?=.*b)(?=.*c)(?=.*d)(?=.*e)(?=.*f)(?=.*g)(?=.*h)(?=.*i)(?=.*j)(?=.*k)(?=.*l)(?=.*m)(?=.*n)(?=.*o)(?=.*p)(?=.*q)(?=.*r)(?=.*s)(?=.*t)(?=.*u)(?=.*v)(?=.*w)(?=.*x)(?=.*y)(?=.*z)./i.test(string) 
 
-    if (result === true ) {
-        return "The sentence is a pangram";
-    } else {
-        return "The sentence is not a pangram";
-    };
+   if (result === true) {
+   	return "The sentence is a pangram";
+   } else {
+   	return "The sentence is not a pangram";
+   }
 }
 
+// The quick brown fox jumps over the lazy dog //
+// Use this sentence as an example of a pangram //
 </script>
 </body>
 </html>

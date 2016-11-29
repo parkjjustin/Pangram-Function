@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+     <title>Check if sentence is a pangram</title>
+     </head>
+
+ <body>
+
+ 		<h1>Adding all the elements in an array</h1>
+
+ <script>
+function pangram() {
+    var sentence ="We promptly judged antique ivory buckles for the next prize"
+    var patt = new RegExp(/[a-z]/i);
+    
+    var result = patt.test(sentence);
+
+    if (result === true ) {
+        return "The sentence is a pangram";
+    } else {
+        return "The sentence is not a pangram";
+    };
+}
+
+</script>
+</body>
+</html>
